@@ -32,6 +32,7 @@ func (repo *Repository) Create(consignment *pb.Consignment) (*pb.Consignment, er
 	return consignment, nil
 }
 
+// GetAll returns consignments
 func (repo *Repository) GetAll() []*pb.Consignment {
 	return repo.consignments
 }
